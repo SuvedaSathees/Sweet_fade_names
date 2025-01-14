@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fce4ec; /* Light pink background */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 {
+            background-color: #f8bbd0; /* Soft pink */
+            color: #880e4f; /* Deep pink */
+            padding: 10px 20px;
+            margin: 10px 0;
+            border-radius: 10px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.3s ease, color 0.3s ease;
+        }
+        h1:hover {
+            transform: scale(1.1); /* Slight zoom on hover */
+            background-color: #e91e63; /* Bright pink */
+            color: #ffffff; /* White text */
+        }
+        h1:active {
+            transform: scale(0.95); /* Shrink effect when clicked */
+        }
+    </style>
+</head>
+<body>
+    <h1 id="a" onclick="called()">Nikitha</h1>
+    <h1 id="b" onclick="calle()">Sunmathi</h1>
+    <h1 id="c" onclick="call()">Narmadha</h1>
+    <h1 id="d" onclick="cal()">Suveda</h1>
+    <h1 id="e" onclick="ca()">Niki</h1>
+    <h1 id="f" onclick="c()">Sun</h1>
+    <h1 id="g" onclick="cc()">Suve</h1>
+    <script>
+        var h = document.getElementById("a");
+        var i = document.getElementById("b");
+        var j = document.getElementById("c");
+        var k = document.getElementById("d");
+        var l = document.getElementById("e");
+        var m = document.getElementById("f");
+        var n = document.getElementById("g");
+
+        function called() {
+            h.remove();
+        }
+        function calle() {
+            i.remove();
+        }
+        function call() {
+            j.remove();
+        }
+        function cal() {
+            k.remove();
+        }
+        function ca() {
+            l.remove();
+        }
+        function c() {
+            m.remove();
+        }
+        function cc() {
+            n.remove();
+        }
+    </script>
+</body>
+</html>
