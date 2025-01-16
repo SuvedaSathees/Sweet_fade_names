@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panda Aesthetic</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f1f8f6; /* Soft light background */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            background-color: #fff; /* White background */
+            color: #000; /* Black text */
+            padding: 15px 25px;
+            margin: 10px 0;
+            border-radius: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            transition: transform 0.2s ease, background-color 0.3s ease, color 0.3s ease;
+        }
+
+        h1:hover {
+            transform: scale(1.1); /* Slight zoom on hover */
+            background-color: #d4edda; /* Light green background */
+            color: #155724; /* Dark green text */
+        }
+
+        h1:active {
+            transform: scale(0.95); /* Shrink effect when clicked */
+        }
+
+        h1:nth-child(odd) {
+            background-color: #f8d7da; /* Light pink background for odd elements */
+            color: #721c24; /* Dark pink text */
+        }
+
+        h1:nth-child(odd):hover {
+            background-color: #f1f3f5; /* Light gray for odd elements hover */
+            color: #495057; /* Darker text color */
+        }
+    </style>
+</head>
+<body>
+    <h1 onclick="deleteitem(event)">Sri</h1>
+    <h1 onclick="deleteitem(event)">Vicky</h1>
+    <h1 onclick="deleteitem(event)">Siva</h1>
+    <h1 onclick="deleteitem(event)">Suve</h1>
+    <h1 onclick="deleteitem(event)">Sun</h1>
+
+    <script>
+        function deleteitem(event) {
+            event.target.remove();
+        }
+    </script>
+</body>
+</html>
